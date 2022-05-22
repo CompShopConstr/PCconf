@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, Permis
 from django.db import models
 import jwt
 
+
 class UserManager(BaseUserManager):
 
     def create_user(self, username, email, password=None):
@@ -29,6 +30,7 @@ class UserManager(BaseUserManager):
         user.save()
 
         return user
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(db_index=True, max_length=255, unique=True)

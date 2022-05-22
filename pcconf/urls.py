@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from app.views import FrontendTemplateView
+from rest_framework import routers
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', FrontendTemplateView.as_view()),
     path('api/', include('authentication.urls', namespace='authentication')),
+    path('api/v1', include('app.urls'))
 ]

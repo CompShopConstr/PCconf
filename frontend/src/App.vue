@@ -1,6 +1,7 @@
 <script>
 import Cart from '@/components/Cart'
 import Account from '@/components/Account'
+import storage from '@/storage'
 
 export default {
   name: 'App',
@@ -15,9 +16,6 @@ export default {
   methods: {
     showSnack () {
       this.snackbar = true
-    },
-    toggleAuthDialog () {
-      this.auth_dialog = !this.auth_dialog
     }
   }
 }
@@ -58,14 +56,13 @@ export default {
           v-model="snackbar"
           color="#d76e00"
           bottom
-          right
         >
           Заказ оформлен!
           <v-btn
             text
             @click="snackbar = false"
           >
-            Close
+            Закрыть
           </v-btn>
         </v-snackbar>
       </v-content>
