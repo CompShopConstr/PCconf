@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a6acc98-24e6-46bf-a172-524ca3740fa9" name="Changes" comment="" />
+    <list default="true" id="8a6acc98-24e6-46bf-a172-524ca3740fa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pcconf.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/app.9a693ecc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/userdata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/storage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/storage/mutations-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cors/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cors/HISTORY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cors/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cors/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cors/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cors/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vary/HISTORY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vary/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vary/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vary/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vary/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/app.0b94f988.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/chunk-vendors.432e6caa.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/chunk-vendors.ddecc4ac.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.72b13649.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.72b13649.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.0d829e46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.0d829e46.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/6399f5a3b9a5840bb9a8702d359e75dc.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/6399f5a3b9a5840bb9a8702d359e75dc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/8e73b68c3cf558b20edfbe6e410ee1bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/8e73b68c3cf558b20edfbe6e410ee1bd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/ef844b1da74102f853e31426a56bbe81.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/ef844b1da74102f853e31426a56bbe81.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/0f0a7a81f42a62f85cb921d92a6ad07e.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/0f0a7a81f42a62f85cb921d92a6ad07e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/1960bbdf0cba8fdeb953bea6da79d64c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/1960bbdf0cba8fdeb953bea6da79d64c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/658deecf0bf57643eb04e63796427049.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/658deecf0bf57643eb04e63796427049.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/bde6c30e3ce59f99d2ad68f9c30592f7.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/bde6c30e3ce59f99d2ad68f9c30592f7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/cb65e6c76c7425c23186e871229ef373.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/cb65e6c76c7425c23186e871229ef373.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/e229b491ee657bd671c5988f53c3af9a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/e229b491ee657bd671c5988f53c3af9a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f794a9fb0521c133494c7e1a58ea7aa9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f794a9fb0521c133494c7e1a58ea7aa9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Account.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Products.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcconf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pcconf/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcconf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pcconf/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +113,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
