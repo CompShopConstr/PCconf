@@ -11,4 +11,5 @@ class User(models.Model):
 
 class Configuration(models.Model):
     name = models.TextField()
-    owner = models.ForeignKey("User", on_delete=models.SET_NULL, null=True)
+    items = models.TextField(max_length=40000, default='')
+    owner = models.TextField(default='')

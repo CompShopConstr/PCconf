@@ -1,4 +1,5 @@
 <script>
+
 export default {
   name: 'Products',
   data () {
@@ -10,15 +11,18 @@ export default {
       maxPrice: 0,
       minPrice: 0,
       applyFilters: true,
+      input: '',
+      min: 6000,
+      max: 40000,
+      compatibilityFlag: false,
+      page: 1,
       list: [
         { text: 'Материнские платы', icon: 'mdi-chart-tree', value: 'motherboards' },
         { text: 'Процессоры', icon: 'mdi-memory', value: 'processors' },
         { text: 'ОЗУ', icon: 'mdi-alpha-r-box', value: 'ram' },
-        { text: 'Жесткие диски', icon: 'mdi-harddisk', value: 'rom' },
-        { text: 'Видеокарты', icon: 'mdi-expansion-card', value: 'videocards' },
-        { text: 'Мониторы', icon: 'mdi-monitor', value: 'monitors' },
-        { text: 'Компьютерные мыши', icon: 'mdi-mouse-variant', value: 'mouses' },
-        { text: 'Клавиатуры', icon: 'mdi-keyboard', value: 'keyboards' }
+        { text: 'Жесткие диски', icon: 'mdi-harddisk', value: 'hdd' },
+        { text: 'Видеокарты', icon: 'mdi-expansion-card', value: 'video_cards' },
+        { text: 'Мониторы', icon: 'mdi-monitor', value: 'monitors' }
       ],
       items: {},
       filters: {}
@@ -38,12 +42,16 @@ export default {
       try {
         this.items = (await import('../server/components')).default
         this.itemsLoaded = true
-      } catch (error) {
-        console.log(error)
-      }
+      } catch (error) {}
     },
     addToCart (product) {
       this.$store.dispatch('setProduct', {
+        product,
+        type: this.selectedComponent
+      })
+    },
+    addToConfCart (product) {
+      this.$store.dispatch('setProductConf', {
         product,
         type: this.selectedComponent
       })
@@ -58,8 +66,10 @@ export default {
         const processor = this.cartComponents[processorIndex].product
         if (this.applyFilters) {
           items.motherboards = items.motherboards.filter(item => item.socket === processor.socket)
+          items.ram = items.ram.filter(item => item.memoryType === processor.memory_type)
         }
         this.filters.Processors = processor.socket
+        this.filters.Ram = processor.memory_type
       } else {
         delete this.filters.Processors
       }
@@ -68,10 +78,8 @@ export default {
         const motherboard = this.cartComponents[motherboardIndex].product
         if (this.applyFilters) {
           items.processors = items.processors.filter(item => item.socket === motherboard.socket)
-          items.ram = items.ram.filter(item => item.memoryType === motherboard.memoryType)
         }
         this.filters.Motherboard = motherboard.socket
-        this.filters.Ram = motherboard.memoryType
       } else {
         delete this.filters.Motherboard
         delete this.filters.Ram
@@ -80,23 +88,17 @@ export default {
       if (ramIndex !== -1) {
         const ram = this.cartComponents[ramIndex].product
         if (this.applyFilters) {
-          items.motherboards = items.motherboards.filter(item => item.memoryType === ram.memoryType)
+          items.processors = items.processors.filter(item => item.memory_type === ram.memory_type)
         }
-        this.filters.Ram = ram.memoryType
+        this.filters.Ram = ram.memory_type
       }
 
       if (this.itemsLoaded) {
-        items.keyboards = items.keyboards.filter(item => this.priceRange[0] <= item.price)
-        items.keyboards = items.keyboards.filter(item => this.priceRange[1] >= item.price)
-
         items.monitors = items.monitors.filter(item => this.priceRange[0] <= item.price)
         items.monitors = items.monitors.filter(item => this.priceRange[1] >= item.price)
 
         items.motherboards = items.motherboards.filter(item => this.priceRange[0] <= item.price)
         items.motherboards = items.motherboards.filter(item => this.priceRange[1] >= item.price)
-
-        items.mouses = items.mouses.filter(item => this.priceRange[0] <= item.price)
-        items.mouses = items.mouses.filter(item => this.priceRange[1] >= item.price)
 
         items.processors = items.processors.filter(item => this.priceRange[0] <= item.price)
         items.processors = items.processors.filter(item => this.priceRange[1] >= item.price)
@@ -104,11 +106,25 @@ export default {
         items.ram = items.ram.filter(item => this.priceRange[0] <= item.price)
         items.ram = items.ram.filter(item => this.priceRange[1] >= item.price)
 
-        items.rom = items.rom.filter(item => this.priceRange[0] <= item.price)
-        items.rom = items.rom.filter(item => this.priceRange[1] >= item.price)
+        items.hdd = items.hdd.filter(item => this.priceRange[0] <= item.price)
+        items.hdd = items.hdd.filter(item => this.priceRange[1] >= item.price)
 
-        items.videocards = items.videocards.filter(item => this.priceRange[0] <= item.price)
-        items.videocards = items.videocards.filter(item => this.priceRange[1] >= item.price)
+        items.video_cards = items.video_cards.filter(item => this.priceRange[0] <= item.price)
+        items.video_cards = items.video_cards.filter(item => this.priceRange[1] >= item.price)
+      }
+
+      if (this.input) {
+        items.monitors = items.monitors.filter(item => (item.name.indexOf(this.input) + 1))
+
+        items.motherboards = items.motherboards.filter(item => (item.name.indexOf(this.input) + 1))
+
+        items.processors = items.processors.filter(item => (item.name.indexOf(this.input) + 1))
+
+        items.ram = items.ram.filter(item => (item.name.indexOf(this.input) + 1))
+
+        items.hdd = items.hdd.filter(item => (item.name.indexOf(this.input) + 1))
+
+        items.video_cards = items.video_cards.filter(item => (item.name.indexOf(this.input) + 1))
       }
 
       return items
@@ -119,10 +135,10 @@ export default {
       try {
         var max = 0
         var item = this.items[newComponent][0]
-        var min = item.price
+        var min = Number(item.price)
         for (let i = 0; i < this.items[newComponent].length; i++) {
           item = this.items[newComponent][i]
-          var price = item.price
+          var price = Number(item.price)
           if (price < min) { min = price }
           if (price > max) { max = price }
         }
@@ -141,7 +157,7 @@ export default {
     <v-col cols="12" sm="12" md="4" lg="3" xl="3">
       <v-card color="#212121" elevation="10" class="mt-4">
         <v-list color="#212121">
-          <v-subheader class="pb-2 title">Комплектующие</v-subheader>
+          <v-text-field class="ml-7 mr-7" append-icon="mdi-shopping-search" dark v-model="input" placeholder="Поиск..." />
           <v-list-item-group v-model="selectedComponent" color="#d76e00">
             <v-list-item
               v-for="(item, i) in list"
@@ -187,13 +203,13 @@ export default {
               label="Цена"
               track-color="#582d00"
             ></v-range-slider>
-            <v-list-item class="pl-4" v-for="(filter, key) in filters">
+            <v-list-item class="pl-4" v-for="(filter, key) in filters" :key="key">
               <v-list-item-content>
                 <v-list-item-title style="color: white">{{key}}</v-list-item-title>
               </v-list-item-content>
               <v-list-item-action>
                 <v-chip
-                  color="#d76e00"
+                  :color="(filters.Motherboard !== filters.Processors) ? 'red darken-4' : '#d76e00'"
                   dark
                 >
                   {{filter.toUpperCase()}}
@@ -209,7 +225,7 @@ export default {
           <v-card height="500" color="#212121">
             <div>
             <v-img style="margin: auto; padding-top: 100px"
-              :src="require('../' + item.image)"
+              :src="item.image"
               max-width="220"
               max-height="220"
               contain
@@ -220,22 +236,18 @@ export default {
               {{item.name}}
             </v-card-title>
 
-            <v-card-subtitle style="color: white">
-              {{item.description}}
-            </v-card-subtitle>
-
             <v-card-actions class="card-actions">
           <span class="title font-weight-light pl-2">
             {{item.price}} ₽
           </span>
-
               <v-spacer></v-spacer>
               <v-btn
                 color="white"
                 icon
                 x-large
+                @click="addToConfCart(item)"
               >
-                <v-icon color="#d76e00" large>mdi-desktop-tower</v-icon>
+                <v-icon color="#d76e00" class="mt-1" large>mdi-desktop-tower</v-icon>
               </v-btn>
               <v-btn
                 color = "white"

@@ -1,5 +1,4 @@
 <script>
-import userdata from './userdata.json'
 const axios = require('axios')
 
 export default {
@@ -16,6 +15,7 @@ export default {
       show2: false,
       show3: false,
       logInSucceed: false,
+      logInSucceedSnackbar: false,
       wrongPassword: false,
       user: {
         name: '',
@@ -57,16 +57,16 @@ export default {
   },
   methods: {
     checkEmail () {
-      const userdata = JSON.parse(localStorage.getItem("userdata"))
+      const userdata = JSON.parse(localStorage.getItem('userdata'))
       for (var i = 0; i < userdata.length; i++) {
-        if (userdata[i]["email"] === this.user.regEmail) {
-            return true
+        if (userdata[i].email === this.user.regEmail) {
+          return true
         }
       }
-    return false
+      return false
     },
 
-    validate() {
+    validate () {
       return this.user.email && /.+@.+\..+/.test(this.user.email) && this.user.password
     },
 
@@ -79,69 +79,68 @@ export default {
         name: '',
         email: '',
         password: ''
-       }
+      }
       userdata.name = this.name
       userdata.email = this.email
       userdata.password = this.password
       // this.$store.dispatch('createUser', userdata)
       try {
-        // Send a POST request to the API
-        const response = axios.post('/api/v1user/', {
+        axios.post('/api/v1user/', {
           name: this.name,
           email: this.email,
           password: this.password
         })
-      } catch (error) {
-        // Log the error
-        console.log(error);
-        }
+      } catch (error) {}
     },
 
     async getUsers () {
       try {
         const response = await axios.get('/api/v1user/')
         this.users = JSON.stringify(response.data)
-      } catch (error) {
-        console.log(error)
-      }
+      } catch (error) {}
     },
 
     logInEmailValidate () {
-      try{
+      try {
         var users = this.users
         for (let i = 0; i < users.length; i++) {
-          if (this.user.email === users[i]['email']) {
+          if (this.user.email === users[i].email) {
             return true
           }
         }
         return false
-        } catch (error) {
-          console.log(error)
-        }
+      } catch (error) {}
     },
 
     logIn () {
-       var users = this.users
-       for (let i = 0; i < users.length; i++) {
-         if (this.user.email === users[i]['email']) {
-           if (this.user.password === users[i]['password']) {
-             this.logInSucceed = true
-             this.dialog = false
-           } else {
-             this.wrongPassword = true
-             this.user.password = ''
-           }
-         }
-       }
+      var users = this.users
+      for (let i = 0; i < users.length; i++) {
+        if (this.user.email === users[i].email) {
+          if (this.user.password === users[i].password) {
+            this.logInSucceed = true
+            this.dialog = false
+            this.logInSucceedSnackbar = true
+          } else {
+            this.wrongPassword = true
+            this.user.password = ''
+          }
+        }
+      }
+    },
+
+    succeedIcon () {
+      if (this.logInSucceed) {
+        return 'mdi-account-check'
+      } else {
+        return 'mdi-account'
+      }
     }
   },
 
-  async created() {
+  async created () {
     const response = await axios.get('/api/v1user/')
     this.users = response.data
   }
-
-
 }
 </script>
 
@@ -149,10 +148,9 @@ export default {
 <div>
 
 <v-snackbar
-  v-model="logInSucceed"
+  v-model="logInSucceedSnackbar"
   absolute
   top
-  right
   color="success"
 >
   <span>Вход выполнен</span>
@@ -161,7 +159,7 @@ export default {
   </v-icon>
   <v-btn
     text
-    @click="logInSucceed = false"
+    @click="logInSucceedSnackbar = false"
   >
   Закрыть
   </v-btn>
@@ -171,7 +169,6 @@ export default {
   v-model="wrongPassword"
   absolute
   top
-  right
   color="error"
 >
   <span>Неверный пароль</span>
@@ -192,8 +189,10 @@ export default {
   offset-y
 >
   <template v-slot:activator="{ on }">
-    <v-btn class="ml-3" icon v-on="on" @click="dialog = true">
-      <v-icon large>mdi-account</v-icon>
+    <v-btn :disabled="logInSucceed" icon class="ml-3 mr-3" v-on="on" @click="dialog = true">
+      <v-icon large color="white">
+        {{ succeedIcon() }}
+      </v-icon>
     </v-btn>
   </template>
 </v-menu>

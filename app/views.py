@@ -5,6 +5,7 @@ from app.models import User, Configuration
 from rest_framework import viewsets
 from .models import User, Configuration
 from .serializers import UserSerializer, ConfigurationSerializer
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 
 class UserViewSet(viewsets.ModelViewSet):

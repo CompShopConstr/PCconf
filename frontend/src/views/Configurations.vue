@@ -1,9 +1,14 @@
 <script>
 export default {
   name: 'Configuration',
+  data () {
+    return {
+      confs: []
+    }
+  },
   async created () {
-    const response = await axios.get('/api/v1configuration/')
-    this.configurations = response.data
+    this.confs = await this.$store.getters.getConfs
+    this.confs = this.confs.filter(conf => conf.owner === '1')
   }
 }
 </script>
@@ -13,60 +18,39 @@ export default {
     <v-simple-table dense class="order-table">
       <thead>
       <tr>
-        <th>Имя</th>
-        <th>Дата</th>
-        <th>Контакты</th>
-        <th>Комментарий</th>
+        <th>Название</th>
         <th>Товары</th>
-        <th>Промокоды</th>
-        <th>Цена</th>
-        <th>Итого</th>
+        <th>Стоимость</th>
       </tr>
       </thead>
       <tbody>
-      <tr :key="index" v-for="(order, index) in orders">
-        <td>{{order.user.firstName}} {{order.user.secondName}}</td>
-        <td>{{order.date}}</td>
+      <tr :key="index" v-for="(conf, index) in this.confs">
+        <td>{{conf.name}}</td>
         <td>
-          <div>{{order.user.phone}}</div>
-          <div>{{order.user.email}}</div>
-        </td>
-        <td>
-          {{order.user.comment}}
+          <v-list dense>
+            <v-list-item
+              dense
+              v-for="(item, index) in JSON.parse(conf.items)"
+              :key="index"
+            >
+              <v-list-item-content class="pa-0">
+                <v-list-item-title v-text="item.product.name"></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
         </td>
         <td>
           <v-list dense>
             <v-list-item
               dense
-              v-for="(item, index) in order.items"
+              v-for="(item, index) in JSON.parse(conf.items)"
               :key="index"
             >
-              <v-list-item-avatar class="ma-0">
-                <v-img
-                  :src="require('../' + item.product.image)"
-                  :contain="true"
-                  height="15"
-                ></v-img>
-              </v-list-item-avatar>
-
-              <v-list-item-content class="pa-0">
-                <v-list-item-title v-text="item.product.name"></v-list-item-title>
-              </v-list-item-content>
-
               <v-list-item-action class="ma-0">
-                 {{item.quantity}} x {{item.product.price}} $
+                {{item.quantity}} x {{item.product.price}} ₽
               </v-list-item-action>
             </v-list-item>
           </v-list>
-        </td>
-        <td>
-          {{order.user.promo}}
-        </td>
-        <td>
-          {{order.price}} $
-        </td>
-        <td>
-          {{order.pay}} $
         </td>
       </tr>
       </tbody>

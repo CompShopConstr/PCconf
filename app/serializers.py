@@ -12,4 +12,4 @@ class UserSerializer(serializers.ModelSerializer):
 class ConfigurationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Configuration
-        fields = ('id', 'name', 'owner_id')
+        fields = ('id', 'name', 'items', 'owner')

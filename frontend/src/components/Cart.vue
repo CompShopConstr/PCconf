@@ -98,7 +98,7 @@ export default {
     offset-y
   >
     <template v-slot:activator="{ on }">
-      <v-btn class="ml-6" icon v-on="on">
+      <v-btn class="ml-3 mr-3" icon v-on="on">
         <v-badge
           color="red"
           :content="items.length"
@@ -120,7 +120,7 @@ export default {
         >
           <v-list-item-avatar>
             <v-img
-              :src="require('../' + item.product.image)"
+              :src="item.product.image"
               :contain="true"
             ></v-img>
           </v-list-item-avatar>
@@ -207,7 +207,7 @@ export default {
         <small class="caption ml-3">*обязательное поле</small>
         <v-spacer></v-spacer>
         <v-btn dark color="#d76e00" @click="dialog = false">Закрыть</v-btn>
-        <v-btn dark color="#d76e00"@click="checkout()">Оплатить</v-btn>
+        <v-btn dark color="#d76e00" @click="checkout()">Оплатить</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

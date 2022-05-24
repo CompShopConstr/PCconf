@@ -1,13 +1,14 @@
 <script>
 import Cart from '@/components/Cart'
 import Account from '@/components/Account'
-import storage from '@/storage'
+import ConfCart from '@/components/ConfCart'
 
 export default {
   name: 'App',
   components: {
     Cart,
-    Account
+    Account,
+    ConfCart
   },
   data: () => ({
     snackbar: false,
@@ -31,7 +32,7 @@ export default {
         height="60"
         class="wrapper"
       >
-        <v-app-bar-nav-icon to="/">
+        <v-app-bar-nav-icon :href="'/'">
           <v-icon large>
             mdi-laptop
           </v-icon>
@@ -41,10 +42,14 @@ export default {
 
         <v-spacer></v-spacer>
 
-        <v-btn text to="/">
-          Товары
+        <v-btn class="orange darken-2 ml-3 mr-3" text to="/orders">
+          Заказы
+        </v-btn>
+        <v-btn class="orange darken-2 ml-3 mr-3" text to="/configurations">
+          Конфигурации
         </v-btn>
 
+        <ConfCart/>
         <Cart :showSnack = "showSnack"/>
         <Account/>
 

@@ -19,7 +19,7 @@ export default {
         <th>Контакты</th>
         <th>Комментарий</th>
         <th>Товары</th>
-        <th>Промокоды</th>
+        <th></th>
         <th>Цена</th>
         <th>Итого</th>
       </tr>
@@ -44,7 +44,7 @@ export default {
             >
               <v-list-item-avatar class="ma-0">
                 <v-img
-                  :src="require('../' + item.product.image)"
+                  :src="item.product.image"
                   :contain="true"
                   height="15"
                 ></v-img>
@@ -55,19 +55,16 @@ export default {
               </v-list-item-content>
 
               <v-list-item-action class="ma-0">
-                 {{item.quantity}} x {{item.product.price}} $
+                 {{item.quantity}} x {{item.product.price}} ₽
               </v-list-item-action>
             </v-list-item>
           </v-list>
         </td>
         <td>
-          {{order.user.promo}}
+          {{order.price}} ₽
         </td>
         <td>
-          {{order.price}} $
-        </td>
-        <td>
-          {{order.pay}} $
+          {{order.pay}} ₽
         </td>
       </tr>
       </tbody>

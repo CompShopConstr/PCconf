@@ -2,80 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a6acc98-24e6-46bf-a172-524ca3740fa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pcconf.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/app.9a693ecc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/userdata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/storage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/storage/mutations-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cors/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cors/HISTORY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cors/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cors/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cors/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cors/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/license" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/object-assign/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/vary/HISTORY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/vary/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/vary/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/vary/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/vary/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ConfCart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/Configurations.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/app.0b94f988.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/chunk-vendors.432e6caa.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/chunk-vendors.ddecc4ac.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.72b13649.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.72b13649.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.0d829e46.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.0d829e46.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/app.9a693ecc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/chunk-vendors.ddecc4ac.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.0b9c3a6b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.2858827d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.2d4debb6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.96b73745.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.991dc17e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.b7337e52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.d131f393.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/1.f31c0d19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.19ebf81f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.45b54c9d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.74006627.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.9e58d0be.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.bb1567a4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.bed4b759.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.e1a67420.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/2.ee5ab63f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.01d423f0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.098ea114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.324fd480.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.5a9eb8b3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.84ad9838.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.a6a562d3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.dee3e916.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/3.f616335b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/4.07fa69ae.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/4.698ff8e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/4.a4f83aa8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/5.8a5c2de7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/5.8a66f047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/5.f9cfa826.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/6.27e4ae97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/6.a1f0c335.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/6.ab519730.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/7.12593cc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/7.554c27c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/7.f9cfa826.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/8.e312c7e2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/8.e8397337.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/8.ea4d5a53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/9.28d7ca4c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/9.6caac02a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/9.891e76c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/img/logo.82b9c7a5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/6399f5a3b9a5840bb9a8702d359e75dc.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/6399f5a3b9a5840bb9a8702d359e75dc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/8e73b68c3cf558b20edfbe6e410ee1bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/8e73b68c3cf558b20edfbe6e410ee1bd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/ef844b1da74102f853e31426a56bbe81.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/ef844b1da74102f853e31426a56bbe81.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/0f0a7a81f42a62f85cb921d92a6ad07e.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/0f0a7a81f42a62f85cb921d92a6ad07e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/1960bbdf0cba8fdeb953bea6da79d64c.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/1960bbdf0cba8fdeb953bea6da79d64c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/658deecf0bf57643eb04e63796427049.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/658deecf0bf57643eb04e63796427049.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/bde6c30e3ce59f99d2ad68f9c30592f7.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/bde6c30e3ce59f99d2ad68f9c30592f7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/cb65e6c76c7425c23186e871229ef373.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/cb65e6c76c7425c23186e871229ef373.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/e229b491ee657bd671c5988f53c3af9a.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/e229b491ee657bd671c5988f53c3af9a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f794a9fb0521c133494c7e1a58ea7aa9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/vue-loader/f794a9fb0521c133494c7e1a58ea7aa9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/follow-redirects/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Account.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/server/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Orders.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Orders.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pcconf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pcconf/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcconf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pcconf/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +111,34 @@
       <recent name="C:\Users\m3ntosss\Desktop\pcconf\frontend\src\api" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="components" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pcconf" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../components.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.components" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -130,5 +149,16 @@
       <updated>1653021858212</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
