@@ -10,6 +10,7 @@ export default {
       password: '',
       dialog: false,
       dialog2: false,
+      logOutDialog: false,
       valid: true,
       show: false,
       show2: false,
@@ -75,22 +76,18 @@ export default {
     },
 
     createUser () {
-      var userdata = {
-        name: '',
-        email: '',
-        password: ''
-      }
-      userdata.name = this.name
-      userdata.email = this.email
-      userdata.password = this.password
+      var name = this.name
+      var email = this.email
+      var password = this.password
       // this.$store.dispatch('createUser', userdata)
-      try {
-        axios.post('/api/v1user/', {
-          name: this.name,
-          email: this.email,
-          password: this.password
-        })
-      } catch (error) {}
+      axios.defaults.withCredentials = true
+      axios.defaults.xsrfHeaderName = 'X-CSRFTOKEN'
+      axios.defaults.xsrfCookieName = 'csrftoken'
+      axios.post('/api/v1user/', {
+        name: name,
+        email: email,
+        password: password
+      })
     },
 
     async getUsers () {
@@ -118,6 +115,8 @@ export default {
         if (this.user.email === users[i].email) {
           if (this.user.password === users[i].password) {
             this.logInSucceed = true
+            this.$store.dispatch('setUserId', users[i].id)
+            this.$store.dispatch('setLoggedIn', true)
             this.dialog = false
             this.logInSucceedSnackbar = true
           } else {
@@ -128,18 +127,34 @@ export default {
       }
     },
 
+    logOut () {
+      this.logInSucceed = false
+      this.logOutDialog = false
+      this.$store.dispatch('setLoggedIn', false)
+    },
+
     succeedIcon () {
       if (this.logInSucceed) {
         return 'mdi-account-check'
       } else {
         return 'mdi-account'
       }
+    },
+
+    accountBtnClick () {
+      if (!this.logInSucceed) {
+        this.dialog = true
+      } else {
+        this.logOutDialog = true
+      }
     }
+
   },
 
   async created () {
     const response = await axios.get('/api/v1user/')
     this.users = response.data
+    this.logInSucceed = this.$store.getters.getLoggedIn
   }
 }
 </script>
@@ -189,12 +204,17 @@ export default {
   offset-y
 >
   <template v-slot:activator="{ on }">
-    <v-btn :disabled="logInSucceed" icon class="ml-3 mr-3" v-on="on" @click="dialog = true">
+    <v-btn icon class="ml-3 mr-3" v-on="on" @click="accountBtnClick()">
       <v-icon large color="white">
         {{ succeedIcon() }}
       </v-icon>
     </v-btn>
   </template>
+  <v-card v-if="logOutDialog" dark v-model="logOutDialog">
+    <v-btn block color="#d76e00" text @click="logOut()">
+      Выйти
+    </v-btn>
+  </v-card>
 </v-menu>
 <v-dialog v-model="dialog" max-width="300px">
     <v-card color="#28282B" elevation="10">

@@ -8,11 +8,19 @@ export default new Vuex.Store({
   state: {
     cart: [],
     confCart: [],
-    orders: JSON.parse(localStorage.getItem('orders')) || []
+    orders: JSON.parse(localStorage.getItem('orders')) || [],
+    loggedIn: localStorage.getItem('loggedIn') || false,
+    userId: localStorage.getItem('userId') || 0
   },
   mutations: {
     setOrder (state, payload) {
       state.orders.push(payload)
+    },
+    setUserId (state, payload) {
+      localStorage.setItem('UserId', payload)
+    },
+    setLoggedIn (state, payload) {
+      localStorage.setItem('loggedIn', payload)
     },
     setProduct (state, payload) {
       const itemIndex = state.cart.findIndex(item => item.type === payload.type)
@@ -98,6 +106,12 @@ export default new Vuex.Store({
     setProductConf (context, payload) {
       context.commit('setProductConf', payload)
     },
+    setUserId (context, payload) {
+      context.commit('setUserId', payload)
+    },
+    setLoggedIn (context, payload) {
+      context.commit('setLoggedIn', payload)
+    },
     deleteProduct (context, payload) {
       context.commit('deleteProduct', payload)
     },
@@ -126,6 +140,12 @@ export default new Vuex.Store({
       var response = await axios.get('/api/v1configuration/')
       confs = response.data
       return confs
+    },
+    getLoggedIn (state) {
+      return state.loggedIn
+    },
+    getUserId (state) {
+      return state.userId
     }
   }
 })

@@ -2,71 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a6acc98-24e6-46bf-a172-524ca3740fa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ConfCart.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Configurations.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/app.9a693ecc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/chunk-vendors.ddecc4ac.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.0b9c3a6b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.2858827d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.2d4debb6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.96b73745.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.991dc17e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.b7337e52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.d131f393.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/1.f31c0d19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.19ebf81f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.45b54c9d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.74006627.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.9e58d0be.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.bb1567a4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.bed4b759.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.e1a67420.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/2.ee5ab63f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.01d423f0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.098ea114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.324fd480.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.5a9eb8b3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.84ad9838.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.a6a562d3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.dee3e916.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/3.f616335b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/4.07fa69ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/4.698ff8e2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/4.a4f83aa8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/5.8a5c2de7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/5.8a66f047.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/5.f9cfa826.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/6.27e4ae97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/6.a1f0c335.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/6.ab519730.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/7.12593cc2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/7.554c27c3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/7.f9cfa826.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/8.e312c7e2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/8.e8397337.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/8.ea4d5a53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/9.28d7ca4c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/9.6caac02a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/9.891e76c1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/logo.82b9c7a5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.bbdbdf0e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-vendors.bb53a0c4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.06007ee1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.06007ee1.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-2d21ebb4.5fde2043.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-2d21ebb4.5fde2043.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Account.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Cart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/server/components.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Orders.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Orders.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Products.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcconf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pcconf/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

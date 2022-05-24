@@ -58,6 +58,7 @@ export default {
     },
     filteredItems () {
       const items = Object.assign({}, this.items)
+      alert(JSON.stringify(items))
       const processorIndex = this.cartComponents.findIndex(item => item.type === 'processors')
       const motherboardIndex = this.cartComponents.findIndex(item => item.type === 'motherboards')
       const ramIndex = this.cartComponents.findIndex(item => item.type === 'ram')
