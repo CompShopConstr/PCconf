@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8a6acc98-24e6-46bf-a172-524ca3740fa9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/products.a1bd9600.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.06007ee1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/app.06007ee1.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-2d21ebb4.5fde2043.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/chunk-2d21ebb4.5fde2043.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/products.461d423a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/products.461d423a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/products.961cd288.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.20f55d73.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/app.20f55d73.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/products.bfd2188b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/products.bfd2188b.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Account.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Products.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Products.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

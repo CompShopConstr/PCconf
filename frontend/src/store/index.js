@@ -82,7 +82,6 @@ export default new Vuex.Store({
       var response = await axios.get('/api/v1configuration/')
       confs = response.data
       confs.push(payload)
-      alert(JSON.stringify(payload))
       try {
         var name = payload.name
         var owner = payload.owner

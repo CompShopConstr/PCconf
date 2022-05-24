@@ -88,6 +88,8 @@ export default {
         email: email,
         password: password
       })
+      this.dialog2 = false
+      this.dialog = false
     },
 
     async getUsers () {
@@ -114,7 +116,7 @@ export default {
       for (let i = 0; i < users.length; i++) {
         if (this.user.email === users[i].email) {
           if (this.user.password === users[i].password) {
-            this.logInSucceed = true
+            this.logInSucceed = 'true'
             this.$store.dispatch('setUserId', users[i].id)
             this.$store.dispatch('setLoggedIn', true)
             this.dialog = false
@@ -134,7 +136,7 @@ export default {
     },
 
     succeedIcon () {
-      if (this.logInSucceed) {
+      if (this.logInSucceed === 'true') {
         return 'mdi-account-check'
       } else {
         return 'mdi-account'
@@ -142,7 +144,7 @@ export default {
     },
 
     accountBtnClick () {
-      if (!this.logInSucceed) {
+      if (this.logInSucceed !== 'true') {
         this.dialog = true
       } else {
         this.logOutDialog = true
@@ -150,7 +152,6 @@ export default {
     }
 
   },
-
   async created () {
     const response = await axios.get('/api/v1user/')
     this.users = response.data
